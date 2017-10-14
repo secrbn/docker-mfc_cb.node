@@ -1,0 +1,26 @@
+captureDirectory: capturing
+completeDirectory: captured
+modelSubdir: true
+modelScanInterval: 300
+autoConvertType: mp4
+keepTsFile: false
+minByteSize: 0
+maxByteSize: 0
+notifications: true
+dateFormat: YYYYMMDD_HHmmss
+debug: false
+modelcolor: magenta
+timecolor: grey
+sitecolor: green
+debugcolor: yellow
+errorcolor: red
+includeSiteInFile: false
+includeSiteInDir: false
+enableMFC: true
+enableCB: true
+mfcmodels:
+  - 3623822
+  - 12513225
+cbmodels:
+  - aynmarie
+  - theemilygrey
