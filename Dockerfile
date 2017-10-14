@@ -16,8 +16,11 @@ apk add git \
     nodejs \
     nodejs-npm \
     ffmpeg  && \
+rm -rf /var/cache/apk/* && \
 git clone https://github.com/jrudess/mfc_cb.node.git && \
 cd mfc_cb.node && \\
 npm install
 
 VOLUME /config /capturing /captured
+
+ENTRYPOINT ["node ~/mfc_cb.node/main.js"]
