@@ -23,6 +23,6 @@ npm install
 
 VOLUME /capturing /captured
 
-COPY ["start-mfc_cb.node.sh","config.yml","/mfc_cb.node"]
+COPY ["start-mfc_cb.node.sh","config.yml","/mfc_cb.node/"]
 
 ENTRYPOINT ["/bin/ash","/mfc_cb.node/start-mfc_cb.node.sh"]
