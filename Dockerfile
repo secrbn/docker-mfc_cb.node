@@ -19,8 +19,10 @@ apk add git \
 rm -rf /var/cache/apk/* && \
 git clone https://github.com/jrudess/mfc_cb.node.git && \
 cd mfc_cb.node && \\
-npm install
+npm install 
 
-VOLUME /config /capturing /captured
+VOLUME /capturing /captured
 
-ENTRYPOINT ["node /mfc_cb.node/main.js"]
+COPY ["start-mfc_cb.node.sh","config.yml","/mfc_cb.node"]
+
+ENTRYPOINT ["/bin/ash","/mfc_cb.node/start-mfc_cb.node.sh"]
