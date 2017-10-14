@@ -23,4 +23,4 @@ npm install
 
 VOLUME /config /capturing /captured
 
-ENTRYPOINT ["node ~/mfc_cb.node/main.js"]
+ENTRYPOINT ["node /mfc_cb.node/main.js"]
