@@ -13,13 +13,11 @@ Docker
 2. Build the image
 3. Run the container
 
-`docker run --name=mfc_cb -v */path/to/persistent/storage/captured_dir/*:/mfc_cb.node/captured/ -v */path/to/persistent/storage/capturing_dir/*:/mfc_cb.node/capturing mfc-cb.node.alpine`
+`docker run -dit --name=mfc_cb -v /path/to/persistent/storage/captured_dir/:/mfc_cb.node/captured/ -v /path/to/persistent/storage/capturing_dir/:/mfc_cb.node/capturing mfc-cb.node.alpine`
 
 ## Configuration
-placeholder
+Edit the config.yml from this repo, then build (rebuild) the container and deploy.
 
 ## Info
-Shell access while the container is running
-docker exec -it mfc_cb /bin/ash
-
-
+View the application output
+docker logs -f mfc_cb
