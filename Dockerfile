@@ -1,5 +1,7 @@
 ###########################################
-# Dockerfile to test alpine 
+# Dockerfile to create a container to run
+# jrudess/mfc_cb.node recorder in an 
+# alpine container
 ###########################################
 
 # Set the base image to alpine
